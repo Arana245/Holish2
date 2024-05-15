@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background: #020202;
+    cursor: crosshair;
+  }
+  canvas{display:block}
+  h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F4F5F7;
+    font-family: "Impact,Charcoal,sans-serif";
+    font-size: 5em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F4F6F7;
+    font-family: "Impact,Charcoal,sans-serif";
+    font-size: 5em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  h1,h2 {
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+    background-clip: text;
+    animation: color 3s linear infinite;
+    background-size: 500%;    
+}
+
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
